@@ -1,0 +1,11 @@
+<launch>
+
+
+	<node name = "param_get_set" pkg = "pkg_ros_basics" type = "param_get_set.py" output="screen"/>
+
+	<rosparam file= "$(find pkg_ros_basics)/config/config_my.yaml"/>
+
+	<node name = "talker" pkg = "pkg_ros_basics" type = "talker.py" output = "screen"/>
+
+
+</launch>
